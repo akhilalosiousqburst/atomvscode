@@ -25,7 +25,7 @@ SECRET_KEY = '15qmf4^4=&oy=&qf(s7pw#7l5x%*=p_63n^iti)=8$xnaw*(--'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pycharmvscode.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['atomvscode.herokuapp.com','127.0.0.1']
 
 
 # Application definition
