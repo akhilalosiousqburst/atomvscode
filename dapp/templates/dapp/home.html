@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Details</title>
+</head>
+<body style="margin-left: 30%; background-color: bisque;">
+
+
+
+<h1 style="margin-left: 22%;">The List</h1>
+<table border="1" width="600">
+<tr>
+<td>Name</td>
+<td>Email</td>
+<td>Phonenumber</td>
+</tr>
+
+{% for detail in alldetail %}
+<tr>
+<td>{{ detail.name }}</td>
+<td>{{ detail.email }}</td>
+<td>{{ detail.phonenumber }}</td>
+</tr>
+{% endfor %}
+</table><br>
+
+<a href="{% url 'index' %}">
+    <button type="button" style="border-radius: 3px; background-color:dodgerblue; margin-left:26%;" id="back">back</button>
+    </a>
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
