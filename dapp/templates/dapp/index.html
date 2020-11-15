@@ -16,39 +16,39 @@
 
 </head>
 
-<body class="tdstyle" style="color: black; margin-left: 40%;">
+<body id="index_body">
 
 
-    <h1 style="font-weight: 400;">Contact Us Form</h1><br><br><br>
+    <h1 style="font-weight: 400; color: white;">Contact Us Form</h1><br><br><br>
     
     <form id="new_user_form" method="POST" novalidate>
     {% csrf_token %}
 
     <div>
-    <label id="p1">Name</label><br>
+    <label id="p1" style="color: white; margin-left: -9px;">Name</label><br>
     {{ form.name }}
-    <span id="sname"></span>
+    <span id="sname" style="color:azure;"></span>
     </div><br>
 
     <div>
-    <label id="p2">Email:</label><br>
+    <label id="p2" style="color: white; margin-left: -9px">Email:</label><br>
     {{ form.email }}
-    <span id="semail"></span>
+    <span id="semail"  style="color:azure"></span>
     </div><br>
     <div>
-    <label id="p3">Phone Number:</label><br>
+    <label id="p3" style="color: white;">Phone Number:</label><br>
     {{ form.phonenumber }}
-    <span id="sphonenumber"></span>
+    <span id="sphonenumber" style="color:azure"></span>
     </div><br>
     
     <div>
-    <label id="p4">Description:</label><br>
+    <label id="p4" style="color: white; margin-left: -9px">Description:</label><br>
     {{ form.description }}
-    <span id="sdescription"></span>
-    </div><br>
+    <span id="sdescription"  style="color:azure"></span>
+    </div><br><br>
     
     <div>
-    <button type="submit" id="submit">Submit</button>
+    <button type="submit" id="submit" style="margin-left: 12%;">Submit</button>
     </div><br>
 
     

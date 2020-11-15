@@ -1,16 +1,32 @@
-body {
+#index_body {
     /* background-color: gray;
     color: #282C35; */
-    background-image:url('{{ STATIC_URL }}images/sample.JPG');
+    color: black;
+    margin-left: 40%;
+    background-image: url("images/lamp.jpeg");
     background-repeat:no-repeat;
     background-size:100%;
         
 }
 
+#xyz_body {
+    background-image: url("images/smiley.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+
+}
+
+#home_body {
+    background-image: url("images/flower.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+
+}
+
 button {
     border-radius: 3px;
 }
-/* 
+
 #p1::before {
     content: "*";
     color: red;
@@ -25,4 +41,4 @@ button {
 #p4::before {
     content: "*";
     color: red;
-} */
+}

@@ -66,10 +66,10 @@ def create_user(request):
                 flag=False
 
         if(not flag):
-            message.update({"nInfo": "name not valid"})
+            message.update({"nInfo": "Name not valid"})
         elif len(cname) < 3:
             flag=False
-            message.update({"nInfo": "minimum 3 characters"})
+            message.update({"nInfo": "Minimum 3 characters required"})
         else:
              message.update({"nInfo": ""})
         
@@ -77,7 +77,7 @@ def create_user(request):
 
         if not "@gmail.com" in cemail:
             flag=False
-            message.update({"eInfo": "email not valid"})
+            message.update({"eInfo": "Email not valid"})
         else:
             message.update({"eInfo": ""})
 
@@ -85,7 +85,7 @@ def create_user(request):
         if(flagg):
             if len(str(cphonenumber)) < 10:
                 flag=False
-                message.update({"pInfo": "invalid phone number"})
+                message.update({"pInfo": "Invalid phone number"})
             else:
                 message.update({"pInfo": ""})
         else:

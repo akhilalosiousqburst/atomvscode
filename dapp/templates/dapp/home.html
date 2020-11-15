@@ -1,25 +1,29 @@
+{% load static %}
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Details</title>
+
+<link href="{% static 'dapp/styles.css' %}" rel="stylesheet" type="text/css">
+
 </head>
-<body style="margin-left: 30%; background-color: bisque;">
+<body id="home_body" style="margin-left: 30%;">
 
 
 
-<h1 style="margin-left: 22%;">The List</h1>
+<h1 style="margin-left: 22%; color: white;">Details:</h1>
 <table border="1" width="600">
 <tr>
-<td>Name</td>
-<td>Email</td>
-<td>Phonenumber</td>
+<td style="color: white;">Name</td>
+<td style="color: white;">Email</td>
+<td style="color: white;">Phonenumber</td>
 </tr>
 
 {% for detail in alldetail %}
 <tr>
-<td>{{ detail.name }}</td>
-<td>{{ detail.email }}</td>
-<td>{{ detail.phonenumber }}</td>
+<td style="color: white;">{{ detail.name }}</td>
+<td style="color: white;">{{ detail.email }}</td>
+<td style="color: white;">{{ detail.phonenumber }}</td>
 </tr>
 {% endfor %}
 </table><br>

@@ -5,20 +5,20 @@ class DappForm(forms.Form):
     name = forms.CharField(
         label='Name',
         max_length=100,
-        widget=forms.TextInput(attrs={'id':"name",'type':"text",'placeholder':"enter name",'aria-describeby':"p1"}))
+        widget=forms.TextInput(attrs={'id':"name",'type':"text",'placeholder':"Enter name",'aria-describeby':"p1"}))
 
     email = forms.EmailField(
         label='Email',
-        widget=forms.EmailInput(attrs={'id':"email",'type':"email",'placeholder':"enter email",'aria-describeby':"p2"}))
+        widget=forms.EmailInput(attrs={'id':"email",'type':"email",'placeholder':"Enter email",'aria-describeby':"p2"}))
 
     phonenumber = forms.IntegerField(
         label='Phonenumber',
-        widget=forms.NumberInput(attrs={'id':"phonenumber",'type':"number",'placeholder':"enter phonenumber",'aria-describeby':"p3"}))
+        widget=forms.NumberInput(attrs={'id':"phonenumber",'type':"number",'placeholder':"Enter phone number",'aria-describeby':"p3"}))
 
     description = forms.CharField(
         label='Description',
         max_length=100,
-        widget=forms.TextInput(attrs={'id':"description",'type':"text",'placeholder':"enter description",'aria-describeby':"p4"}))
+        widget=forms.TextInput(attrs={'id':"description",'type':"text",'placeholder':"Describe here",'aria-describeby':"p4"}))
 
 
     ename = forms.CharField(max_length=50)

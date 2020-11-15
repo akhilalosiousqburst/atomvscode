@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,23 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Django Application</title>
 
+        <link href="{% static 'dapp/styles.css' %}" rel="stylesheet" type="text/css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </head>
 
-    <Body>
+    <Body id="xyz_body">
         <br><br>
-        <h1 style="text-align: center;" id="success">You Successfully Submitted Your Contact Form</h1><br>
-        <h1 style="text-align: center;" id="thank">Thank You</h1>
+        <h1 style="text-align: center; color: azure; font-size: 40px; -webkit-text-stroke: 2px black; font-family: Arial, Helvetica, sans-serif;" id="success">Your Details Was Successfully Submitted</h1><br>
+        <h1 style="text-align: center; color: azure; font-size: 40px; -webkit-text-stroke: 2px black; font-family: Arial, Helvetica, sans-serif;" id="thank">Thank You</h1>
         <br>
         <br>
         <br>
         
         <a href="{% url 'showdetail' %}">
-        <button type="button" id="showdetails" style="border-radius: 3px; background-color:dodgerblue; margin-left: 45.5%;" id="back">Show details</button>
+        <button type="button" id="showdetails" style="border-radius: 3px; border-color: black; background-color:lightskyblue; margin-left: 45.5%; font-weight:bold;"  id="back">Show details</button>
         </a>
         <a href="{% url 'index' %}">
-        <button type="button" style="border-radius: 3px; background-color:dodgerblue;" id="back">back</button>
+        <button type="button" style="border-radius: 3px; border-color:black; background-color: lightskyblue; font-weight:bold;" id="back">back</button>
         </a>
 
         <!-- <script type="text/javascript">
