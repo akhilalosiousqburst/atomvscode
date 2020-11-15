@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '15qmf4^4=&oy=&qf(s7pw#7l5x%*=p_63n^iti)=8$xnaw*(--'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['atomvscode.herokuapp.com','127.0.0.1']
 

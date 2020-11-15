@@ -1,6 +1,10 @@
 body {
-    background-color: gray;
-    color: #282C35;
+    /* background-color: gray;
+    color: #282C35; */
+    background-image:url('{{ STATIC_URL }}images/sample.JPG');
+    background-repeat:no-repeat;
+    background-size:100%;
+        
 }
 
 button {
